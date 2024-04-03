@@ -1,0 +1,5 @@
+{
+  "start": "<b>Hello!</b> 👋\n\nI'm the simplest telegram bot",
+  "text": "You wrote:\n<blockquote>{text}</blockquote>",
+  "media": ["You sent {type}", "with caption:\n<blockquote>{caption}</blockquote>"]
+}
