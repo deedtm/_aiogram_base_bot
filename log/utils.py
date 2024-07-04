@@ -1,6 +1,7 @@
 import logging
 from . import logger
 
+
 def disable_loggers(names: tuple[str] | str):
     if isinstance(names, tuple):
         names_str = ', '.join(names)
@@ -14,3 +15,4 @@ def disable_loggers(names: tuple[str] | str):
             _logger.setLevel(logging.WARNING)
 
     logger.info('Logging was disabled')
+    
