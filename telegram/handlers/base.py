@@ -3,7 +3,7 @@ from aiogram import F
 from aiogram.types import Message
 from aiogram.fsm.context import FSMContext
 from log import logger
-from .data.objects import router
+from .__data.objects import router
 from .utils import get_command, get_state, get_exception
 from .messages.messages import message_handler
 

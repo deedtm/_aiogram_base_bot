@@ -1,0 +1,10 @@
+{
+  "start": "👋  <b>Hello!</b>",
+  "text": "💬  You wrote: {text}",
+  "media": ["🖼  You sent {type}", "with a caption: {caption}"],
+  "reply_button": "⏬  Reply to me with the buttons below",
+  "reply_button:response": "🤔  Ooo... That's interesting!\n\n😁  How about trying again, or do you want to /cancel?",
+  "inline_button": "⏬  Check me by using buttons below that I knew you good enough",
+  "inline_button:response": "🤓  I definitely know that your {data} is <b>{value}</b>",
+  "cancel": "🗑  The action was cancelled"
+}

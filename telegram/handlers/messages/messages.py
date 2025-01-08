@@ -1,6 +1,6 @@
 from aiogram.types import Message
 from .log import logger
-from ..data.constants import TEMPLATES
+from ..__data.constants import TEMPLATES
 from ...utils import get_username
 
 

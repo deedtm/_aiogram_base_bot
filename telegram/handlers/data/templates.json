@@ -1,5 +1,0 @@
-{
-  "start": "<b>Hello!</b> 👋",
-  "text": "You wrote:\n<blockquote>{text}</blockquote>",
-  "media": ["You sent {type}", "with caption:\n<blockquote>{caption}</blockquote>"]
-}

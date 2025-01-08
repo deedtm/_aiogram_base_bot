@@ -12,7 +12,7 @@ class TelegramBot(Bot):
         self.logger = get_logger(__name__)
     
     async def start(self):
-        self.logger.info(f'Starting {self.__class__.__name__}... (~3 sec)') 
+        self.logger.info(f'Starting {self.__class__.__name__}...') 
         
         await self.delete_webhook(drop_pending_updates=True)
         await self.dp.start_polling(self, allowed_updates=self.dp.resolve_used_update_types())

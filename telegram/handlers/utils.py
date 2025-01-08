@@ -1,10 +1,10 @@
 from .exceptions import CommandDoesNotExist, StateDoesNotExist, ExceptionDoesNotExist
 from .__utils import get_function
-from . import global_variables
+from . import __global_variables
 
 
 def get_command(command: str):
-    vars = global_variables.get()
+    vars = __global_variables.get()
     try:
         if command in vars:
             module = vars[command]
@@ -15,7 +15,7 @@ def get_command(command: str):
 
 
 def get_state(state_data: str):
-    vars = global_variables.get()
+    vars = __global_variables.get()
     response, data = state_data.split(":")[1:3]
     try:
         if response in vars:
@@ -27,7 +27,7 @@ def get_state(state_data: str):
 
 
 def get_exception(err: BaseException):
-    vars = global_variables.get()
+    vars = __global_variables.get()
     class_name = err.__class__.__name__.lower()
     try:
         if class_name in vars:
